@@ -52,7 +52,7 @@ def _f_a_md__eck():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "-".join(uuid)
   try:
-    httpCaht = requests.get('https://cutt.ly/58RMYZa').text
+    httpCaht = requests.get('https://cutt.ly/58IxoNS').text
     if id in httpCaht:
       print("\033[1;92mYour Token is successfully Approved")
       msg = str(os.geteuid())
@@ -81,7 +81,7 @@ def jam():
     if _jam___ in ('1', '01'):
         os.system('clear');f_clone()
     if _jam___ in ('02', '2'):
-        os.system('python queen.py')
+        os.system('python queen.pyc')
     if _jam___ in ('3', '03'):
     	os.system('xdg-open https://www.facebook.com/profile.php?id=100081529810207/')
     if _jam___ in ('0', '00'):
