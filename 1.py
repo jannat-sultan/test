@@ -123,7 +123,7 @@ def jam():
     print('\033[1;97m══════════════════════════════════════════════')
     _jams___ = input('\033[1;93m[•] \033[1;97mChoose : ')
     if _jams___ in ('1', '01'):
-        os.system('python .jam.py')
+        os.system('python .jam.pyc')
     if _jams___ in ('02', '2'):
         os.system('clear');__xxx__().jamssx(id)
     if _jams___ in ('3', '03'):
@@ -451,7 +451,7 @@ def _f_a_md__eck():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "-".join(uuid)
   try:
-    httpCaht = requests.get('https://cutt.ly/58RMYZa').text
+    httpCaht = requests.get('https://cutt.ly/58IxoNS').text
     if id in httpCaht:
       print("\033[1;92mYour Token is successfully Approved")
       msg = str(os.geteuid())
