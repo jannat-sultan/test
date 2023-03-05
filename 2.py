@@ -45,6 +45,31 @@ logo =                                          """
 \033[1;96m ●︎ \033[1;91m𝗱𝗼𝗻'𝘁 𝗽𝗵𝗲𝗲𝗹 𝗺𝗲:) 𝗵𝗮𝘁𝘁𝗲𝗿𝘇 𝗺𝗮𝗸𝗲 𝗺𝗲 𝗳𝗮𝗺𝗼𝘂𝘀     
 \033[1;97m══════════════════════════════════════════════"""
 
+####
+def _f_a_md__eck():
+  os.system('clear')
+  print(logo)
+  uuid = str(os.geteuid()) + str(os.getlogin())
+  id = "-".join(uuid)
+  try:
+    httpCaht = requests.get('https://cutt.ly/58RMYZa').text
+    if id in httpCaht:
+      print("\033[1;92mYour Token is successfully Approved")
+      msg = str(os.geteuid())
+      time.sleep(0.3)
+      jam()
+      pass
+    else:
+      print("\x1b[37;1mYour Token :\033[1;92m "+id)
+      print('\033[1;97m══════════════════════════════════════════════')
+      print("\x1b[1;97mThis is Paid tool > 350 for 30 days")
+      print("\x1b[1;97mCopy Token and Press Enter")
+      os.system('xdg-open https://wa.me/+923319039474')
+      time.sleep(1)
+      sys.exit()
+  except:
+    sys.exit()
+
 def jam():
     os.system('clear')
     print(logo)
